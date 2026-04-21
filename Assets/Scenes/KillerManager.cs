@@ -4,8 +4,8 @@ using UnityEngine;
 public class KillerManager : MonoBehaviour
 {
 
-    private CapsuleCollider2D _collider;
-    private SpriteRenderer _renderer;
+    private BoxCollider2D _collider;
+    [SerializeField] private SpriteRenderer _renderer;
     private Rigidbody2D _rigidbody;
 
     [SerializeField] private Transform respawnTarget;
@@ -15,8 +15,7 @@ public class KillerManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _collider = GetComponent<CapsuleCollider2D>();
-        _renderer = GetComponent<SpriteRenderer>();
+        _collider = GetComponent<BoxCollider2D>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
