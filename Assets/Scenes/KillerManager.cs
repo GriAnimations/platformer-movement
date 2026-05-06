@@ -53,7 +53,7 @@ public class KillerManager : MonoBehaviour
 
     private IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         gameObject.transform.position = _respawnTarget.position;
         _collider.enabled = true;
         _renderer.enabled = true;

@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 43.2
+    y: 0
     width: 1536
     height: 36
   m_SerializedDataModeController:
@@ -668,7 +668,7 @@ MonoBehaviour:
       height: 910.45496
     m_MinimalGUI: 1
   m_defaultScale: 0.47734377
-  m_LastWindowPixelSize: {x: 916.5, y: 569.5}
+  m_LastWindowPixelSize: {x: 733.2, y: 455.6}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79.200005
+    y: 24
     width: 263.8
     height: 455.6
   m_SerializedDataModeController:
@@ -775,8 +775,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 264.80002
-    y: 79.200005
+    x: 265.8
+    y: 24
     width: 733.2
     height: 455.6
   m_SerializedDataModeController:
@@ -1402,8 +1402,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Tile Palette\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1000
-    y: 79.200005
+    x: 1001
+    y: 24
     width: 101.19995
     height: 455.6
   m_SerializedDataModeController:
@@ -1450,12 +1450,12 @@ MonoBehaviour:
       scrollOffset: 0
     m_DynamicPanelContainerData:
     - containerId: overlay-dynamic-panel--left
-      width: 40.64
+      width: 56
       saveData:
         state: 0
         overlayData: []
     - containerId: overlay-dynamic-panel--right
-      width: 40.64
+      width: 56
       saveData:
         state: 0
         overlayData: []
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 560.8
+    y: 505.6
     width: 1102.2
     height: 305.19998
   m_SerializedDataModeController:
@@ -1534,9 +1534,7 @@ MonoBehaviour:
       m_Data: 32826
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 32694
-    - m_Data: 1000000000
-    - m_Data: 2147483647
+    - m_Data: 32850
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1569,7 +1567,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 32694
+    - m_Data: 32850
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1688,8 +1686,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1103.2001
-    y: 79.200005
+    x: 1104.2
+    y: 24
     width: 431.80005
     height: 786.8
   m_SerializedDataModeController:
