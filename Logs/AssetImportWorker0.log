@@ -226,3 +226,11 @@ Received Import Request.
 Start importing Assets/Scenes/KiVerboten.unity using Guid(24ac26d138255f946bdf88b991a8d936) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '10c46e63c4307ce968753478ea880db8') in 0.1421424 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 140.665851 seconds.
+  path: Assets/Scenes/NoGriAllowed.unity
+  artifactKey: Guid(57ae6b8a68d2f2d44a78dc1bae285280) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Scenes/NoGriAllowed.unity using Guid(57ae6b8a68d2f2d44a78dc1bae285280) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'bffea734c59bdf92421fbc4ae2f9901f') in 0.0673706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
