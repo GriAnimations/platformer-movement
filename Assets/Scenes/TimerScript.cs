@@ -7,7 +7,7 @@ public class TimerScript : MonoBehaviour
 {
 
     public float timer;
-    private float _originalTimer;
+    public float originalTimer;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private KillerManager killerManager;
     
@@ -16,7 +16,7 @@ public class TimerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _originalTimer = timer;
+        originalTimer = timer;
     }
 
     // Update is called once per frame
@@ -53,6 +53,6 @@ public class TimerScript : MonoBehaviour
     public void ResetTimer()
     {
         timerActive = false;
-        timer = _originalTimer;
+        timer = originalTimer;
     }
 }

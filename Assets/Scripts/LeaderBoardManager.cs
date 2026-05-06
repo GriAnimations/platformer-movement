@@ -104,10 +104,12 @@ public class LeaderBoardManager : MonoBehaviour
         ToString(leaderboard[4], _rank5Time);
     }
 
-    private void ToString(float timer, TextMeshProUGUI text)
+    private void ToString(float currentTime, TextMeshProUGUI text)
     {
-        int minutes = Mathf.FloorToInt(timer / 60);
-        int seconds = Mathf.FloorToInt(timer % 60);
+        currentTime = timer.originalTimer - currentTime;
+        
+        int minutes = Mathf.FloorToInt(currentTime / 60);
+        int seconds = Mathf.FloorToInt(currentTime % 60);
         text.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
