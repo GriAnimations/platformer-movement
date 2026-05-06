@@ -8,13 +8,17 @@ public class KillerManager : MonoBehaviour
     [SerializeField] private SpriteRenderer _renderer;
     private Rigidbody2D _rigidbody;
 
-    [SerializeField] private Transform respawnTarget;
-    [SerializeField] private ParticleSystem deathParticles;
-    [SerializeField] private TimerScript timer;
+    private Transform _respawnTarget;
+    private ParticleSystem _deathParticles;
+    private TimerScript _timer;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _respawnTarget = GameObject.Find("SpawnPoint").GetComponent<Transform>();
+        _deathParticles = GameObject.Find("DeathParticles").GetComponent<ParticleSystem>();
+        _timer = GameObject.Find("Start").GetComponent<TimerScript>();
+        
         _collider = GetComponent<BoxCollider2D>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
@@ -22,7 +26,10 @@ public class KillerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R) && _timer.timerActive)
+        {
+            KillPlayer();
+        }
     }
     
     private void OnCollisionEnter2D(Collision2D other)
@@ -35,24 +42,24 @@ public class KillerManager : MonoBehaviour
 
     public void KillPlayer()
     {
-        deathParticles.Play();
+        _deathParticles.Play();
         _collider.enabled = false;
         _renderer.enabled = false;
         _rigidbody.bodyType = RigidbodyType2D.Static;
         StartCoroutine(Respawn());
             
-        timer.StopTimer();
+        _timer.StopTimer();
     }
 
     private IEnumerator Respawn()
     {
         yield return new WaitForSeconds(1.5f);
-        gameObject.transform.position = respawnTarget.position;
+        gameObject.transform.position = _respawnTarget.position;
         _collider.enabled = true;
         _renderer.enabled = true;
         _rigidbody.bodyType = RigidbodyType2D.Dynamic;
         
-        timer.ResetTimer();
+        _timer.ResetTimer();
     }
     
 }

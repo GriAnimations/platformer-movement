@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TimerScript : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class TimerScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private KillerManager killerManager;
     
-    private bool _timerActive;
+    public bool timerActive;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +22,7 @@ public class TimerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_timerActive)
+        if (timerActive)
         {
             timer -= Time.deltaTime;
         }
@@ -40,18 +41,18 @@ public class TimerScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _timerActive = true;
+            timerActive = true;
         }
     }
 
     public void StopTimer()
     {
-        _timerActive = false;
+        timerActive = false;
     }
 
     public void ResetTimer()
     {
-        _timerActive = false;
+        timerActive = false;
         timer = _originalTimer;
     }
 }
