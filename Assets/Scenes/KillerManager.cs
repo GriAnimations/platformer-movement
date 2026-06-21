@@ -17,7 +17,7 @@ public class KillerManager : MonoBehaviour
     {
         _respawnTarget = GameObject.Find("SpawnPoint").GetComponent<Transform>();
         _deathParticles = GameObject.Find("DeathParticles").GetComponent<ParticleSystem>();
-        _timer = GameObject.Find("Start").GetComponent<TimerScript>();
+        _timer = GameObject.Find("Start + Timer").GetComponent<TimerScript>();
         
         _collider = GetComponent<BoxCollider2D>();
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -29,6 +29,7 @@ public class KillerManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && _timer.timerActive)
         {
             KillPlayer();
+            RespawnTrigger(0.5f);
         }
     }
     
@@ -37,6 +38,7 @@ public class KillerManager : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle"))
         {
 			KillPlayer();
+            RespawnTrigger(1);
         }
     }
 
@@ -46,14 +48,18 @@ public class KillerManager : MonoBehaviour
         _collider.enabled = false;
         _renderer.enabled = false;
         _rigidbody.bodyType = RigidbodyType2D.Static;
-        StartCoroutine(Respawn());
             
         _timer.StopTimer();
     }
 
-    private IEnumerator Respawn()
+    public void RespawnTrigger(float delay)
     {
-        yield return new WaitForSeconds(1f);
+        StartCoroutine(Respawn(delay));
+    }
+
+    private IEnumerator Respawn(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         gameObject.transform.position = _respawnTarget.position;
         _collider.enabled = true;
         _renderer.enabled = true;

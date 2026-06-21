@@ -7,9 +7,11 @@ public class TimerScript : MonoBehaviour
 {
 
     public float timer;
+    private float _timerUp;
     public float originalTimer;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private KillerManager killerManager;
+    [SerializeField] private LeaderBoardManager leaderBoardManager;
     
     public bool timerActive;
     
@@ -25,16 +27,15 @@ public class TimerScript : MonoBehaviour
         if (timerActive)
         {
             timer -= Time.deltaTime;
+            _timerUp = originalTimer - timer;
+            
+            timerText.text = TimeSpan.FromSeconds(_timerUp).ToString("ss\\.fff") + " / 1 minute!";
         }
-        
-        int minutes = Mathf.FloorToInt(timer / 60);
-        int seconds = Mathf.FloorToInt(timer % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        if (timer <= 0)
-        {
-            killerManager.KillPlayer();
-        }
+        if (!(timer <= 0) || !timerActive) return;
+        killerManager.KillPlayer();
+        timerText.text = "Times Up!";
+        leaderBoardManager.DisplayLeaderBoard("Can you make it on the LeaderBoard?");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -54,5 +55,7 @@ public class TimerScript : MonoBehaviour
     {
         timerActive = false;
         timer = originalTimer;
+        
+        timerText.text = "00.000 / 1 minute!";
     }
 }
