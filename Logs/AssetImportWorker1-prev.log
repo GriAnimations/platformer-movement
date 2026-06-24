@@ -1,14 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.8f1 (1c7db571dde0) revision 1867189'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab" at "2026-06-23T08:06:47.1487753Z"
-OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32097 MB
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15775 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-geral" at "2026-06-24T10:13:04.2921771Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-23T08:06:47Z
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 42024, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Error: Unexpected message Type: ApiErrorResponse, expected: HandshakeResponse
+Date: 2026-06-24T10:13:04Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Unity.exe
@@ -18,13 +15,13 @@ C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/lisab/Desktop/FH/Semesterprojekt II/UnityProject/platformer-movement
+C:/Unity stuff/Jack o' Jester
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55373
+56448
 -licensingIpc
-LicenseClient-lisab
+LicenseClient-geral
 -job-worker-count
 7
 -background-job-worker-count
@@ -33,8 +30,8 @@ LicenseClient-lisab
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/lisab/Desktop/FH/Semesterprojekt II/UnityProject/platformer-movement
-C:/Users/lisab/Desktop/FH/Semesterprojekt II/UnityProject/platformer-movement
+Successfully changed project path to: C:/Unity stuff/Jack o' Jester
+C:/Unity stuff/Jack o' Jester
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -70,12 +67,12 @@ C:/Users/lisab/Desktop/FH/Semesterprojekt II/UnityProject/platformer-movement
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [21584]  Target information:
+Player connection [35648]  Target information:
 
-Player connection [21584]  * "[IP] 192.168.0.45 [Port] 0 [Flags] 2 [Guid] 3048384741 [EditorId] 3048384741 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-K33LQTEE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [35648]  * "[IP] 192.168.0.167 [Port] 0 [Flags] 2 [Guid] 2153828313 [EditorId] 2153828313 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-OP0NDMM9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21584] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21584] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [35648] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35648] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -87,60 +84,87 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.8f1 (1c7db571dde0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/lisab/Desktop/FH/Semesterprojekt II/UnityProject/platformer-movement/Assets
+[Subsystems] Discovering subsystems at path C:/Unity stuff/Jack o' Jester/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
     Vendor:   NVIDIA
-    VRAM:     5996 MB
-    Driver:   32.0.15.8183
+    VRAM:     3962 MB
+    Driver:   32.0.15.9579
+Shader 'Hidden/Universal Render Pipeline/FallbackError': fallback shader 'Hidden/Core/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/StencilDeferred': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/ClusterDeferred': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
+Shader 'Universal Render Pipeline/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Particles/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/VR/SpatialMapping/Occlusion': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/VR/SpatialMapping/Wireframe': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
+Shader 'Universal Render Pipeline/Particles/Simple Lit': fallback shader 'Universal Render Pipeline/Particles/Unlit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/Simple Lit' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree8': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Complex Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002570 seconds.
-- Loaded All Assemblies, in  0.596 seconds
+Registered in 0.006533 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              fa5f7e31a961467cba1fd749d1918e77
+  Correlation Id:          d6f7f87918752c95dce254edc1ebd65a
+  External correlation Id: 5581990434102275800
+  Machine Id:              tifgm3pwEF7oeWatuHPIq9e6oE4=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-geral" (connect: 0.00s, validation: 0.01s, handshake: 2.77s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-geral-notifications" at "2026-06-24T10:13:07.0646217Z"
+[Licensing::Module] Licensing Background thread has ended after 2.77s
+- Loaded All Assemblies, in  1.262 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.589 seconds
-Domain Reload Profiling: 1181ms
-	BeginReloadAssembly (205ms)
+- Finished resetting the current domain, in  1.121 seconds
+Domain Reload Profiling: 2370ms
+	BeginReloadAssembly (442ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (58ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (244ms)
-		LoadAssemblies (199ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (107ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (163ms)
+	LoadAllAssembliesAndSetupDomain (503ms)
+		LoadAssemblies (426ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (239ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (217ms)
+		AnalyzeDomain (496ms)
+			TypeCache.Refresh (491ms)
+				TypeCache.ScanAssembly (455ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (589ms)
+	FinalizeReload (1122ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (538ms)
+		SetupLoadedEditorAssemblies (1019ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (68ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (128ms)
-			ProcessInitializeOnLoadAttributes (241ms)
-			ProcessInitializeOnLoadMethodAttributes (96ms)
+			InitializePlatformSupportModulesInManaged (139ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (247ms)
+			ProcessInitializeOnLoadAttributes (412ms)
+			ProcessInitializeOnLoadMethodAttributes (211ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -149,132 +173,362 @@ Domain Reload Profiling: 1181ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Error: Timed-out after 30.00s, waiting for HandshakeResponse
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-lisab"
-[Licensing::IpcConnector] LicenseClient-lisab channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab-6000.3.8" at "2026-06-23T08:07:17.1987371Z"
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              898e3cc5949645f2ba92261875da1bcd
-  Correlation Id:          1c65b57383602796b3a43942ce365f6f
-  External correlation Id: 8841438472852229605
-  Machine Id:              OkdY9qFmRvOtmEhu81VG2AUWO5c=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-lisab-6000.3.8" (connect: 0.00s, validation: 0.00s, handshake: 1.06s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab-6000.3.8-notifications" at "2026-06-23T08:07:18.2665433Z"
-[Licensing::Module] Licensing Background thread has ended after 31.12s
-[Licensing::Module] Licensing is initialized (took 28.65s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: F4-2GQG-FKZX-2Q8B-M9AS-XXXX
+  Id: F4-DFJ8-HZR5-WQ5U-MVAM-XXXX
   Product: Unity Personal
   Type: ULF
   Expiration: Unlimited
-- Loaded All Assemblies, in 29.586 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+[Licensing::Module] License group:
+  Id: 9071659417178-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  2.042 seconds
+Refreshing native plugins compatible for Editor in 3.90 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractive': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractiveTransparent': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Autodesk Interactive/AutodeskInteractiveMasked': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree8_PBRLit': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree9_URP': fallback shader 'Hidden/Shader Graph/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'Shader Graphs/Decal': fallback shader 'Hidden/Shader Graph/FallbackError' not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.938 seconds
-Domain Reload Profiling: 30516ms
-	BeginReloadAssembly (28878ms)
+- Finished resetting the current domain, in  2.358 seconds
+Domain Reload Profiling: 4377ms
+	BeginReloadAssembly (512ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (587ms)
-		LoadAssemblies (448ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (102ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (107ms)
+	LoadAllAssembliesAndSetupDomain (1264ms)
+		LoadAssemblies (1009ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (265ms)
-			TypeCache.Refresh (183ms)
-				TypeCache.ScanAssembly (168ms)
-			BuildScriptInfoCaches (68ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (939ms)
+		AnalyzeDomain (559ms)
+			TypeCache.Refresh (391ms)
+				TypeCache.ScanAssembly (359ms)
+			BuildScriptInfoCaches (130ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (2359ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (775ms)
+		SetupLoadedEditorAssemblies (2011ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (189ms)
-			ProcessInitializeOnLoadAttributes (405ms)
-			ProcessInitializeOnLoadMethodAttributes (165ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (395ms)
+			ProcessInitializeOnLoadAttributes (1277ms)
+			ProcessInitializeOnLoadMethodAttributes (304ms)
+			AfterProcessingInitializeOnLoad (22ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4812 unused Assets / (4.0 MB). Loaded Objects now: 5647.
-Memory consumption went from 135.3 MB to 131.3 MB.
-Total: 10.393500 ms (FindLiveObjects: 0.875600 ms CreateObjectMapping: 0.726200 ms MarkObjects: 6.696000 ms  DeleteObjects: 2.094100 ms)
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4812 unused Assets / (3.9 MB). Loaded Objects now: 5649.
+Memory consumption went from 137.7 MB to 133.9 MB.
+Total: 20.097400 ms (FindLiveObjects: 0.893800 ms CreateObjectMapping: 0.682500 ms MarkObjects: 15.916500 ms  DeleteObjects: 2.602700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 969355.985429 seconds.
-  path: Assets/kenney_pixel-platformer
-  artifactKey: Guid(32368a37770f25d4fb1795e211f8f0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_pixel-platformer using Guid(32368a37770f25d4fb1795e211f8f0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec8a9bc47917796e99c0bac1afa8acfb') in 0.0077379 seconds
+  Time since last request: 717830.374603 seconds.
+  path: Assets/Visuals/Art/tili/Tilemap2_9.asset
+  artifactKey: Guid(5a9eca35736a0914ea2fa4245743a8c4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/Tilemap2_9.asset using Guid(5a9eca35736a0914ea2fa4245743a8c4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '160331b7ed19aff8aa97da79c9b464ae') in 0.230005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Scripts/LeaderBoardManager.cs
+  artifactKey: Guid(f4359e02785c7b64a94e71afad2e0e5f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Scripts/LeaderBoardManager.cs using Guid(f4359e02785c7b64a94e71afad2e0e5f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'd3a5a06c42a3efe56512cf7a90f360d4') in 0.0327821 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 76.539433 seconds.
-  path: Assets/Visuals/Art/Tilemap/Square.asset
-  artifactKey: Guid(628c668df895b2a4399cfa5b8120c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/Tilemap/Square.asset using Guid(628c668df895b2a4399cfa5b8120c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e386115f0e09e8b4bb85fdd33b1ca9ff') in 0.074512 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000043 seconds.
+  path: Assets/Visuals/Art/TileMap_Lychee/NewPalette.prefab
+  artifactKey: Guid(14caeb2e3a06fa7438cc2fa67e167761) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/TileMap_Lychee/NewPalette.prefab using Guid(14caeb2e3a06fa7438cc2fa67e167761) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '99f1f91dac648b2a05a928bfe03a2071') in 0.0543606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 543.348236 seconds.
-  path: Assets/Visuals/Art/IMG_1922.PNG
-  artifactKey: Guid(c4c6a4d8a5e756345ac0f4f0f5044c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/IMG_1922.PNG using Guid(c4c6a4d8a5e756345ac0f4f0f5044c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8967938b51d1222a84f4d35d136e11fe') in 0.0525601 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000032 seconds.
+  path: Assets/Visuals/Art/StartFinishLines.PNG
+  artifactKey: Guid(2b1c50087dbd51f47b21687b1e1cf87b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/StartFinishLines.PNG using Guid(2b1c50087dbd51f47b21687b1e1cf87b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'de1bebc5c8e9c1d72eba9cd6bc0578de') in 0.1533901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Visuals/Art/IMG_1924.PNG
-  artifactKey: Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/IMG_1924.PNG using Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6c3dde5d81803e7e95c723c3df24a3a') in 0.0242011 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000044 seconds.
+  path: Assets/Visuals/Art/tili/GS_TileMap_11.asset
+  artifactKey: Guid(4e75dfaf73038ad4086486d18ed55104) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/GS_TileMap_11.asset using Guid(4e75dfaf73038ad4086486d18ed55104) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '6361c0f167717bea8baee6e809f92ca8') in 0.0288269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Visuals/Art/tili/TILEMAP_5.asset
+  artifactKey: Guid(5c42887537fcd2c43a727e3a3fc58121) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TILEMAP_5.asset using Guid(5c42887537fcd2c43a727e3a3fc58121) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'b76c8e82eaafc94fc20161d757b2c1b4') in 0.0250316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Visuals/Art/IMG_1930.PNG
-  artifactKey: Guid(f467e953e12935c4f8325338d22eca4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/IMG_1930.PNG using Guid(f467e953e12935c4f8325338d22eca4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e3290330efd4716461ccdbe6dcf072c') in 0.0241587 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  path: Assets/_Recovery/0 (1).unity
+  artifactKey: Guid(25f89b3a1de06574ba41901dd3e3b11a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/_Recovery/0 (1).unity using Guid(25f89b3a1de06574ba41901dd3e3b11a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'b2293ffcb1a7319624aead94e4a1c28e') in 0.0229142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.681332 seconds.
-  path: Assets/Visuals/Art/IMG_1924.PNG
-  artifactKey: Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
-Start importing Assets/Visuals/Art/IMG_1924.PNG using Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '534349131ceb122216b2382911224967') in 0.1497237 seconds
+  Time since last request: 0.000031 seconds.
+  path: Assets/Visuals/Art/TileMap_Lychee/TILEMAP_0.asset
+  artifactKey: Guid(defa1d52bc7db39468198eb19dab5e50) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/TileMap_Lychee/TILEMAP_0.asset using Guid(defa1d52bc7db39468198eb19dab5e50) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '6798b6cf890ccca635f867c44f2e263d') in 0.0257285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Visuals/Art/tili/GS_TileMap_8.asset
+  artifactKey: Guid(d3c389ef74bd6e14ba75ea11a4846bcb) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/GS_TileMap_8.asset using Guid(d3c389ef74bd6e14ba75ea11a4846bcb) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'b68533099ddf4fc7a9da28e35292bac2') in 0.0304103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Visuals/Art/tili/JJ_TileMap_10.asset
+  artifactKey: Guid(56ac6c6275730954ba0c749ee67b2048) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/JJ_TileMap_10.asset using Guid(56ac6c6275730954ba0c749ee67b2048) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '7fcd5097861751bbb79bad4ee412cc4b') in 0.0236181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Visuals/Art/tili/JJ_TileMap_11.asset
+  artifactKey: Guid(77f1903d2d6494a4bbff7e59fac9f60f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/JJ_TileMap_11.asset using Guid(77f1903d2d6494a4bbff7e59fac9f60f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '96f5f1b01e89b3d452a29315ee509100') in 0.0289099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_7.asset
+  artifactKey: Guid(9e7c45c039b54004e8fb56878188aafc) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_7.asset using Guid(9e7c45c039b54004e8fb56878188aafc) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '7295aff0eec7ee03ce3676a606ba1bac') in 0.0247497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Visuals/Art/GS_TileMap.png
+  artifactKey: Guid(3f7c07094e1320d41a614ff143d7d51e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/GS_TileMap.png using Guid(3f7c07094e1320d41a614ff143d7d51e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '21f557ee1371874e1763bb887a1bc8e8') in 0.0960929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(983756e1bea6cf84caaafacdaf8e2028) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(983756e1bea6cf84caaafacdaf8e2028) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '2c4494d6c6fecdfc6973d89939187d9e') in 0.1378612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/konfetti.png
+  artifactKey: Guid(71de0a19e64eda142834b8257fd46470) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/konfetti.png using Guid(71de0a19e64eda142834b8257fd46470) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '2c125e102383cc2ecdf199a4438feef7') in 0.0351375 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000034 seconds.
-  path: Assets/Visuals/Art/IMG_1931.PNG
-  artifactKey: Guid(c258e928ea6b6f949b8800142f3820d2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
-Start importing Assets/Visuals/Art/IMG_1931.PNG using Guid(c258e928ea6b6f949b8800142f3820d2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e1d34f7bb6e7ceb6b6c2c1982cd1113b') in 0.0291347 seconds
+  path: Assets/Visuals/Art/Spikes.PNG
+  artifactKey: Guid(1af0a4787d5266946832b8782e957571) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/Spikes.PNG using Guid(1af0a4787d5266946832b8782e957571) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '761e966797cbefdf06c5d30e81f6ff68') in 0.0370876 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Visuals/Animation/WalkAnim.anim
+  artifactKey: Guid(00ea66f1a2acb1c4ba0db84d0838bde6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Animation/WalkAnim.anim using Guid(00ea66f1a2acb1c4ba0db84d0838bde6) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e9119c2550ada8e66f815f55e2c03334') in 0.056915 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Visuals/Art/tili/GS_TileMap_17.asset
+  artifactKey: Guid(90ac3969b0b58f44fb58ff02562d4ce2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/GS_TileMap_17.asset using Guid(90ac3969b0b58f44fb58ff02562d4ce2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '88b56f0bc52e2f284dcc1db256743af8') in 0.0270531 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Visuals/Art/tili/Tilemap2_10.asset
+  artifactKey: Guid(4b710f9e330785f4583116dd00294c6c) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/Tilemap2_10.asset using Guid(4b710f9e330785f4583116dd00294c6c) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'd8f149def12bbe2e3d6fec081008b1f6') in 0.0268491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_1.asset
+  artifactKey: Guid(b967f98c887fad847b481fa4b9a927e7) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_1.asset using Guid(b967f98c887fad847b481fa4b9a927e7) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '94aa905ffd2cd977e141a7ba3d38dcaf') in 0.0259863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Visuals/Art/TileMap_Lychee/TILEMAP_8.asset
+  artifactKey: Guid(86fa98f21b7a4fc4981d438a90110e68) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/TileMap_Lychee/TILEMAP_8.asset using Guid(86fa98f21b7a4fc4981d438a90110e68) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'c1d24151d35b515b34632f6f8b1b7387') in 0.0291249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Visuals/Art/tili/JJ_TileMap_13.asset
+  artifactKey: Guid(65fb1d34e0113f84283b6d43c1371801) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/JJ_TileMap_13.asset using Guid(65fb1d34e0113f84283b6d43c1371801) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '2eb93d0b2f028c0f0b198c614ff9a00d') in 0.0243147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/_Recovery/0.unity
+  artifactKey: Guid(e372b4634f95dcf4c94a7520e6f02f12) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/_Recovery/0.unity using Guid(e372b4634f95dcf4c94a7520e6f02f12) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '24535fc1c2c5b749b05c765394fab3da') in 0.0241223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo - URP.mat
+  artifactKey: Guid(6751ce1a4611b3940812c13a6847d94f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo - URP.mat using Guid(6751ce1a4611b3940812c13a6847d94f) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '7712aa7ea5bda387ea27a8db9e9704b5') in 0.1713679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Scenes/NoGriAllowed/Global Volume Profile.asset
+  artifactKey: Guid(42fb591ead61f0645aca7c82dd9acbd4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Scenes/NoGriAllowed/Global Volume Profile.asset using Guid(42fb591ead61f0645aca7c82dd9acbd4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'f6535d3d97c19d414911ea8f56c7019e') in 0.0305177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Visuals/Art/tili/JJ_TileMap_3.asset
+  artifactKey: Guid(5d165113a1ff86240b4e4ed1b97ef40b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/JJ_TileMap_3.asset using Guid(5d165113a1ff86240b4e4ed1b97ef40b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'b208bd350870c6c1c01e3886a71c358b') in 0.0254319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Visuals/Art/tili/TILEMAP_6.asset
+  artifactKey: Guid(8e04245cb98d36f43859c2bd39ee18e9) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TILEMAP_6.asset using Guid(8e04245cb98d36f43859c2bd39ee18e9) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e4be964eedce097df1667bcb4b153518') in 0.0264463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Visuals/Art/tili/ddickfish.prefab
+  artifactKey: Guid(ec93ad72b5af1c94ca40fd5e53c7c60d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/ddickfish.prefab using Guid(ec93ad72b5af1c94ca40fd5e53c7c60d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '07eaf4a08c5b0e01fae54db68704df4e') in 0.0302315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Visuals/Art/tili/Tilemap2_3.asset
+  artifactKey: Guid(5e12579b86590c14fb3d3616c034553a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/Tilemap2_3.asset using Guid(5e12579b86590c14fb3d3616c034553a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '69c3cf6a9e629817688e34bdb7c651fa') in 0.0250236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Visuals/Art/tili/Tilemap2_4.asset
+  artifactKey: Guid(6c2e4696e440b5241a2a93ed9d357fd5) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/Tilemap2_4.asset using Guid(6c2e4696e440b5241a2a93ed9d357fd5) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '12213ae9abc4d9d648904589f413c329') in 0.0255246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Visuals/Art/tili
+  artifactKey: Guid(1726daeae21f4ca41be3d93fc1c4fd51) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili using Guid(1726daeae21f4ca41be3d93fc1c4fd51) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '95140075b584085e24982cde09cb13fb') in 0.0216494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.284950 seconds.
+  path: Assets/DefaultVolumeProfile.asset
+  artifactKey: Guid(42ab7c1ec0e547a458444cf97218b946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DefaultVolumeProfile.asset using Guid(42ab7c1ec0e547a458444cf97218b946) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4c3b1d3bfa9a9154f8ff6eef5c0affd') in 0.0417915 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Land FX.prefab
+  artifactKey: Guid(f5834c5a434eb97499bc8cbea7b01824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Land FX.prefab using Guid(f5834c5a434eb97499bc8cbea7b01824) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61d53c8e961e1bcc45bc6d890a46ce7f') in 0.9484319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.548812 seconds.
+  path: Assets/_Recovery
+  artifactKey: Guid(0babea144b6c29b4fb998be01eff4836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Recovery using Guid(0babea144b6c29b4fb998be01eff4836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02f28fbd4afa11e017174864441b0d83') in 0.0012006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.474922 seconds.
+  path: Assets/_Recovery/0 (1).unity
+  artifactKey: Guid(25f89b3a1de06574ba41901dd3e3b11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Recovery/0 (1).unity using Guid(25f89b3a1de06574ba41901dd3e3b11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7dc4e39ca79ee4b74b71064ba33c2682') in 0.0013323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
