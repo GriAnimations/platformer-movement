@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.8f1 (1c7db571dde0) revision 1867189'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab" at "2026-06-23T08:06:47.1487753Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab" at "2026-06-23T10:50:43.8731873Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32097 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-23T08:06:47Z
+Date: 2026-06-23T10:50:43Z
 [Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 42024, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Error: Unexpected message Type: ApiErrorResponse, expected: HandshakeResponse
@@ -16,11 +16,11 @@ C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker7
 -projectPath
 C:/Users/lisab/Desktop/FH/Semesterprojekt II/UnityProject/platformer-movement
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker7.log
 -srvPort
 55373
 -licensingIpc
@@ -70,12 +70,12 @@ C:/Users/lisab/Desktop/FH/Semesterprojekt II/UnityProject/platformer-movement
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [21584]  Target information:
+Player connection [46528]  Target information:
 
-Player connection [21584]  * "[IP] 192.168.0.45 [Port] 0 [Flags] 2 [Guid] 3048384741 [EditorId] 3048384741 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-K33LQTEE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [46528]  * "[IP] 192.168.0.45 [Port] 0 [Flags] 2 [Guid] 2253130571 [EditorId] 2253130571 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-K33LQTEE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21584] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21584] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [46528] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [46528] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -87,7 +87,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.8f1 (1c7db571dde0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -103,44 +103,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002570 seconds.
-- Loaded All Assemblies, in  0.596 seconds
+Registered in 0.002728 seconds.
+- Loaded All Assemblies, in  0.666 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.589 seconds
-Domain Reload Profiling: 1181ms
-	BeginReloadAssembly (205ms)
+- Finished resetting the current domain, in  0.554 seconds
+Domain Reload Profiling: 1215ms
+	BeginReloadAssembly (215ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (58ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (244ms)
-		LoadAssemblies (199ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (315ms)
+		LoadAssemblies (206ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (239ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (217ms)
+		AnalyzeDomain (311ms)
+			TypeCache.Refresh (308ms)
+				TypeCache.ScanAssembly (289ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (589ms)
+	FinalizeReload (554ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (538ms)
+		SetupLoadedEditorAssemblies (490ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (68ms)
+			InitializePlatformSupportModulesInManaged (81ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (128ms)
-			ProcessInitializeOnLoadAttributes (241ms)
-			ProcessInitializeOnLoadMethodAttributes (96ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (85ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -153,25 +153,25 @@ Begin MonoManager ReloadAssembly
 [Licensing::Client] Error: Timed-out after 30.00s, waiting for HandshakeResponse
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-lisab"
 [Licensing::IpcConnector] LicenseClient-lisab channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab-6000.3.8" at "2026-06-23T08:07:17.1987371Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab-6000.3.8" at "2026-06-23T10:51:13.9621281Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              898e3cc5949645f2ba92261875da1bcd
+  Session Id:              a9c94065aecf4ba087251ba9c49d655d
   Correlation Id:          1c65b57383602796b3a43942ce365f6f
-  External correlation Id: 8841438472852229605
+  External correlation Id: 9132003705518140407
   Machine Id:              OkdY9qFmRvOtmEhu81VG2AUWO5c=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-lisab-6000.3.8" (connect: 0.00s, validation: 0.00s, handshake: 1.06s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab-6000.3.8-notifications" at "2026-06-23T08:07:18.2665433Z"
-[Licensing::Module] Licensing Background thread has ended after 31.12s
-[Licensing::Module] Licensing is initialized (took 28.65s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-lisab-6000.3.8" (connect: 0.00s, validation: 0.00s, handshake: 1.27s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lisab-6000.3.8-notifications" at "2026-06-23T10:51:15.2333519Z"
+[Licensing::Module] Licensing Background thread has ended after 31.36s
+[Licensing::Module] Licensing is initialized (took 28.30s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: F4-2GQG-FKZX-2Q8B-M9AS-XXXX
   Product: Unity Personal
   Type: ULF
   Expiration: Unlimited
-- Loaded All Assemblies, in 29.586 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+- Loaded All Assemblies, in 29.594 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -179,102 +179,110 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.938 seconds
-Domain Reload Profiling: 30516ms
-	BeginReloadAssembly (28878ms)
+- Finished resetting the current domain, in  1.018 seconds
+Domain Reload Profiling: 30590ms
+	BeginReloadAssembly (28526ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (587ms)
-		LoadAssemblies (448ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (917ms)
+		LoadAssemblies (801ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (265ms)
-			TypeCache.Refresh (183ms)
-				TypeCache.ScanAssembly (168ms)
-			BuildScriptInfoCaches (68ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (939ms)
+		AnalyzeDomain (240ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (155ms)
+			BuildScriptInfoCaches (59ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1019ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (775ms)
+		SetupLoadedEditorAssemblies (836ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (189ms)
-			ProcessInitializeOnLoadAttributes (405ms)
-			ProcessInitializeOnLoadMethodAttributes (165ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (444ms)
+			ProcessInitializeOnLoadMethodAttributes (195ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4812 unused Assets / (4.0 MB). Loaded Objects now: 5647.
-Memory consumption went from 135.3 MB to 131.3 MB.
-Total: 10.393500 ms (FindLiveObjects: 0.875600 ms CreateObjectMapping: 0.726200 ms MarkObjects: 6.696000 ms  DeleteObjects: 2.094100 ms)
+Unloading 4812 unused Assets / (4.5 MB). Loaded Objects now: 5647.
+Memory consumption went from 135.3 MB to 130.8 MB.
+Total: 12.084300 ms (FindLiveObjects: 0.619200 ms CreateObjectMapping: 0.804900 ms MarkObjects: 7.588800 ms  DeleteObjects: 3.069700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 969355.985429 seconds.
-  path: Assets/kenney_pixel-platformer
-  artifactKey: Guid(32368a37770f25d4fb1795e211f8f0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_pixel-platformer using Guid(32368a37770f25d4fb1795e211f8f0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec8a9bc47917796e99c0bac1afa8acfb') in 0.0077379 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 980559.835780 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_5.asset
+  artifactKey: Guid(3b58d62a2e648854c8e8591a749bb83b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_5.asset using Guid(3b58d62a2e648854c8e8591a749bb83b) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '811dc4d4e84338d7bad10776e7c40b28') in 0.1248065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 76.539433 seconds.
-  path: Assets/Visuals/Art/Tilemap/Square.asset
-  artifactKey: Guid(628c668df895b2a4399cfa5b8120c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/Tilemap/Square.asset using Guid(628c668df895b2a4399cfa5b8120c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e386115f0e09e8b4bb85fdd33b1ca9ff') in 0.074512 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000040 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_0.asset
+  artifactKey: Guid(4fc68e1e8ec86454e8a0ec1621b3d946) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_0.asset using Guid(4fc68e1e8ec86454e8a0ec1621b3d946) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '8fb7304def8997638dd58c09e9b0a4ce') in 0.0182772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 543.348236 seconds.
-  path: Assets/Visuals/Art/IMG_1922.PNG
-  artifactKey: Guid(c4c6a4d8a5e756345ac0f4f0f5044c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/IMG_1922.PNG using Guid(c4c6a4d8a5e756345ac0f4f0f5044c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8967938b51d1222a84f4d35d136e11fe') in 0.0525601 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000030 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_14.asset
+  artifactKey: Guid(3cdcfdb61135b254abf76649fc2b5ceb) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_14.asset using Guid(3cdcfdb61135b254abf76649fc2b5ceb) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '359012a6f373bd8eafdbd2cef1d054d2') in 0.0171612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Visuals/Art/IMG_1924.PNG
-  artifactKey: Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/IMG_1924.PNG using Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6c3dde5d81803e7e95c723c3df24a3a') in 0.0242011 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000019 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_3.asset
+  artifactKey: Guid(86e12fd52ab69f2468cb86f97f248ce7) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_3.asset using Guid(86e12fd52ab69f2468cb86f97f248ce7) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '45e0f4cb2af09bdb87459c43935a4793') in 0.0148739 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Visuals/Art/IMG_1930.PNG
-  artifactKey: Guid(f467e953e12935c4f8325338d22eca4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visuals/Art/IMG_1930.PNG using Guid(f467e953e12935c4f8325338d22eca4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e3290330efd4716461ccdbe6dcf072c') in 0.0241587 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000021 seconds.
+  path: Assets/Visuals/Art/tili/ddickfish.prefab
+  artifactKey: Guid(ec93ad72b5af1c94ca40fd5e53c7c60d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/ddickfish.prefab using Guid(ec93ad72b5af1c94ca40fd5e53c7c60d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'c7500a59fa72de85abd8ffe503d454f8') in 0.0368975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.681332 seconds.
-  path: Assets/Visuals/Art/IMG_1924.PNG
-  artifactKey: Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
-Start importing Assets/Visuals/Art/IMG_1924.PNG using Guid(9aa0f11a320ce1047898400bf5e782d3) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '534349131ceb122216b2382911224967') in 0.1497237 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000023 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_11.asset
+  artifactKey: Guid(4c12024e7708aea4188ef49e77c2494e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_11.asset using Guid(4c12024e7708aea4188ef49e77c2494e) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '6425f4d3ccc45c1c8fcd5061b3ec7357') in 0.0159374 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Visuals/Art/IMG_1931.PNG
-  artifactKey: Guid(c258e928ea6b6f949b8800142f3820d2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
-Start importing Assets/Visuals/Art/IMG_1931.PNG using Guid(c258e928ea6b6f949b8800142f3820d2) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: 'e1d34f7bb6e7ceb6b6c2c1982cd1113b') in 0.0291347 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000038 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_8.asset
+  artifactKey: Guid(83c9a869244697e4b9b2314ce069128d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_8.asset using Guid(83c9a869244697e4b9b2314ce069128d) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '3fef466eb87b1152dad761fa762e9996') in 0.0219891 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Visuals/Art/tili/TileMap_JJ_2.asset
+  artifactKey: Guid(003d188ceb8c3ed4fad8392c93c2d0a4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Visuals/Art/tili/TileMap_JJ_2.asset using Guid(003d188ceb8c3ed4fad8392c93c2d0a4) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (artifact id: '764cb073df4aa73ac205390bbeba87c8') in 0.0156905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
