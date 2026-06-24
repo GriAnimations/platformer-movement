@@ -24,6 +24,8 @@ public class PlayerAnimator : MonoBehaviour
     public bool justLanded { private get; set; }
 
     public float currentVelY;
+    
+    
 
     private void Start()
     {
@@ -71,6 +73,7 @@ public class PlayerAnimator : MonoBehaviour
     {
         if (startedJumping)
         {
+            
             anim.SetTrigger("Jump");
             GameObject obj = Instantiate(jumpFX, transform.position - (Vector3.up * transform.localScale.y / 2), Quaternion.Euler(-90, 0, 0));
             Destroy(obj, 1);

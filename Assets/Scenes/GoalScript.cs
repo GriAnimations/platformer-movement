@@ -8,7 +8,7 @@ public class GoalScript : MonoBehaviour
     private ParticleSystem _particle;
     private LeaderBoardManager _leaderBoardManager;
     
-
+    [SerializeField] private AudioManager audioManager;
 
     private void Start()
     {
@@ -24,5 +24,7 @@ public class GoalScript : MonoBehaviour
         _timer.StopTimer();
         _particle.Play();
         _leaderBoardManager.AddScore();
+        
+        audioManager.PlaySound(1);
     }
 }

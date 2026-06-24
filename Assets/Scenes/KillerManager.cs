@@ -12,6 +12,8 @@ public class KillerManager : MonoBehaviour
     private ParticleSystem _deathParticles;
     private TimerScript _timer;
     
+    [SerializeField] private AudioManager audioManager;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,6 +52,8 @@ public class KillerManager : MonoBehaviour
         _rigidbody.bodyType = RigidbodyType2D.Static;
             
         _timer.StopTimer();
+        
+        audioManager.PlaySound(0);
     }
 
     public void RespawnTrigger(float delay)

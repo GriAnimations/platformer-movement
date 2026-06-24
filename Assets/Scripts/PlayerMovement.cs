@@ -11,9 +11,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	private static readonly int State = Animator.StringToHash("State");
+
 	//Scriptable object which holds all the player's movement parameters. If you don't want to use it
 	//just paste in all the parameters, though you will need to manuly change all references in this script
 	public PlayerData Data;
+	
+	[SerializeField] private Animator animator;
+	[SerializeField] private AudioManager audioManager;
 
 	#region COMPONENTS
     public Rigidbody2D RB { get; private set; }
@@ -106,22 +111,35 @@ public class PlayerMovement : MonoBehaviour
 		_moveInput.y = Input.GetAxisRaw("Vertical");
 
 		if (_moveInput.x != 0)
+		{
 			CheckDirectionToFace(_moveInput.x > 0);
+		}
+			
 
 		if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
 			OnJumpInput();
         }
 
-		if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
-		{
-			OnJumpUpInput();
-		}
-
 		if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K))
 		{
 			OnDashInput();
 		}
+
+		if (_moveInput.x == 0)
+		{
+			animator.SetInteger("State", 0);
+		}
+		if (!CanJump())
+		{
+			animator.SetInteger("State", 1);
+		}
+		else if (_moveInput.x != 0)
+		{
+			animator.SetInteger("State", 2);
+		}
+		
+		
 		#endregion
 
 		#region COLLISION CHECKS
@@ -217,6 +235,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 			IsDashing = true;
+			audioManager.PlayDashSound();
 			IsJumping = false;
 			IsWallJumping = false;
 			_isJumpCut = false;

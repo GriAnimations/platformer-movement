@@ -127,7 +127,7 @@ TextureImporter:
         x: 0
         y: 1280
         width: 360
-        height: 640
+        height: 590
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,7 +149,7 @@ TextureImporter:
         x: 360
         y: 1280
         width: 360
-        height: 640
+        height: 590
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,7 +171,7 @@ TextureImporter:
         x: 720
         y: 1280
         width: 360
-        height: 640
+        height: 590
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,7 +193,7 @@ TextureImporter:
         x: 0
         y: 640
         width: 360
-        height: 640
+        height: 597
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,7 +215,7 @@ TextureImporter:
         x: 360
         y: 640
         width: 360
-        height: 640
+        height: 597
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,7 +237,7 @@ TextureImporter:
         x: 720
         y: 640
         width: 360
-        height: 640
+        height: 599
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,7 +259,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 360
-        height: 640
+        height: 585
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Walk_7
       rect:
         serializedVersion: 2
-        x: 360
+        x: 362
         y: 0
         width: 360
-        height: 640
+        height: 583
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -79,7 +79,7 @@ public class LeaderBoardManager : MonoBehaviour
         ToStringEmpty(_rank4Time, _rank4Name);
         ToStringEmpty(_rank5Time, _rank5Name);
         
-        StartCoroutine(WaitForInput());
+        //StartCoroutine(WaitForInput());
         leaderBoardDisplay.SetActive(false);
     }
 
